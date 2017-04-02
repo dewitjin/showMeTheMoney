@@ -37,7 +37,7 @@ Note: I borrowed some of code from different places and modified them when I nee
 
 ## Motivation
 
-This project exist because it was assign to me.  However, I find it useful in a lot of application that I am building and wanted to share the code.  The most difficult part about the whole project was not knowing what to do when the data was displaying incorrectly.  Since the assignment required the data to be stored in binary, it was not easy to just check if the data was written out correctly.  Fortunately, Hynek showed me the way how I could start fixing the problem.  In order for me to do all the other stuff I had to do in the end, I had to make sure the data binary files contained all the right data.  So Hynek wrote me some code to read the data binary file to see the messed up data and then I went on fixing from there.
+This project exist because it was assign to me.  However, I find it useful in a lot of application that I am building and wanted to share the code.  The most difficult part about the whole project was not knowing what to do when the data was displaying incorrectly.  Since the assignment required the data to be stored in binary, it was not easy to just check if the data was written out correctly.  Fortunately, Hynek showed me how I could start fixing the problem.  Hynek told me I had to make sure the data binary files contained all the right data first.  So Hynek wrote me some code to read the data binary file to see the messed up data and then I went on fixing from there.
 
 ## Installation
 
