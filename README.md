@@ -1,8 +1,8 @@
 ## Synopsis
 
-Note: 	text file			      = dataOut.txt
-	      data binary file		= clients.dat
-	      index binary file	  = lastname.idx
+Note: 	text file = dataOut.txt <br />
+	data binary file = clients.dat <br />
+	index binary file = lastname.idx <br />
 	
 This project teaches you how to read from a text file, creates a data binary file with the data in the text file, converts the data binary file into an index binary file and displays the data in various ways (i.e. sorting by last name, natural order etc).
 
@@ -14,26 +14,26 @@ I started the project by building each feature one by one.  If you try to learn 
 
 1) Build the convert.c file and display.c
 
-convert.c should be able to read a text file and create a data binary file (with the data inside the text file)
-display.c should be able to read from the data binary file and display the data onto the console
+convert.c should be able to read a text file and create a data binary file (with the data inside the text file)<br />
+display.c should be able to read from the data binary file and display the data onto the console<br />
 
 2) Build index.c and modify convert.c and display.c
 
 convert.c file should be able to read from the data binary file and create a index file (index.c) with useful information (i.e. data key, file position) //TODO have multiple indices in one index file, right now it’s just one index (lastname, file position)<br />
-display.c file should be able to read the index file, grab the file position stored inside the index, and then use the file position to locate the account data inside the data binary file
+display.c file should be able to read the index file, grab the file position stored inside the index, and then use the file position to locate the account data inside the data binary file<br />
 
 3) Build a startProgram.c file, datadefs.h, convert.h, index.h, display.h and modify the old files to include the appropriate header files to reduce code repetition 
 
-//TODO change assign06.c to startProgram.c
+//TODO change assign06.c to startProgram.c<br />
 
-startProgram.c should include the datadefs.h, display a menu to convert, index, display natural order, display by last name ascending order, and exit 
+startProgram.c should include the datadefs.h, display a menu to convert, index, display natural order, display by last name ascending order, and exit <br />
 
-//TODO after adding more sorting feature, remember to add more options in the menu
+//TODO after adding more sorting feature, remember to add more options in the menu<br />
 
-other header files should include datadefs.h (because it stores main struct and program definitions)
-all other source code (convert.c, index.c, display.c) should have no main function and include the appropriate header files
+other header files should include datadefs.h (because it stores main struct and program definitions)<br />
+all other source code (convert.c, index.c, display.c) should have no main function and include the appropriate header files<br />
 
-Note: I borrowed some of code from different places and modified them when I needed too
+Note: I borrowed some of code from different places and modified them when I needed too<br />
 
 ## Motivation
 
