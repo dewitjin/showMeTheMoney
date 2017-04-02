@@ -33,7 +33,7 @@ startProgram.c should include the datadefs.h, display a menu to convert, index, 
 other header files should include datadefs.h (because it stores main struct and program definitions)<br />
 all other source code (convert.c, index.c, display.c) should have no main function and include the appropriate header files<br />
 
-Note: I borrowed some of code from different places and modified them when I needed too<br />
+Note: I borrowed code from different places and modified them when I needed too - borrowed code are noted down in source files<br />
 
 ## Motivation
 
