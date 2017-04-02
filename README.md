@@ -19,7 +19,7 @@ display.c should be able to read from the data binary file and display the data 
 
 2) Build index.c and modify convert.c and display.c
 
-convert.c file should be able to read from the data binary file and create a index file (index.c) with useful information (i.e. data key, file position) //TODO have multiple indices in one index file, right now it’s just one index (lastname, file position)
+convert.c file should be able to read from the data binary file and create a index file (index.c) with useful information (i.e. data key, file position) //TODO have multiple indices in one index file, right now it’s just one index (lastname, file position)<br />
 display.c file should be able to read the index file, grab the file position stored inside the index, and then use the file position to locate the account data inside the data binary file
 
 3) Build a startProgram.c file, datadefs.h, convert.h, index.h, display.h and modify the old files to include the appropriate header files to reduce code repetition 
