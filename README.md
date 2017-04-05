@@ -30,10 +30,10 @@ The biggestest challenge in refractoring my code to different header files is ge
 
 The above method worked, but I also added a guard in datadef.h; thereby, preventing redefinition errors when I include this in multiple places.
 
-#ifndef DATADEFS_H //explantions on guard https://en.wikipedia.org/wiki/Include_guard
-#define DATADEFS_H
-//code
-#endif // !DATADEFS.H
+#ifndef DATADEFS_H //explantions on guard https://en.wikipedia.org/wiki/Include_guard<br />
+#define DATADEFS_H<br />
+//code<br />
+#endif // !DATADEFS.H<br />
 
 startProgram.c should include the datadefs.h, display a menu to convert, index, display natural order, display by last name ascending order, and exit <br />
 
