@@ -28,6 +28,13 @@ display.c file should be able to read the index file, grab the file position sto
 
 The biggestest challenge in refractoring my code to different header files is getting a redefinition error.  In order to debug it, I would define the struct in different headers to see what worked and what didn't. My error was fixed by including datadefs.h once in startProgram.c, and in all other header files (covert.h, index.h and display.h).  I didn't have to include the other source files in startProgram.c.  In the other source files (covert.c, index.c and display.c) I included the appropriate header files (covert.h, index.h and display.h). I think my redefinition error occured because I tried to include the other source files in startProgram.c, and somewhere the program tried to redefine the code inside.  It was hard to debug because the debugger wouldn't jump to a file twice, it just threw the error.
 
+The above method worked, but I also added a guard in datadef.h; thereby, preventing redefinition errors when I include this in multiple places.
+
+#ifndef DATADEFS_H //explantions on guard https://en.wikipedia.org/wiki/Include_guard
+#define DATADEFS_H
+//code
+#endif // !DATADEFS.H
+
 startProgram.c should include the datadefs.h, display a menu to convert, index, display natural order, display by last name ascending order, and exit <br />
 
 //TODO after adding more sorting feature, remember to add more options in the menu<br />
