@@ -1,0 +1,7 @@
+Jerry Seinfeld jerry@gmail.com 63 231.65
+Cosmo Kramer cosmo@gmail.com 65 2373.22
+George Costanza george@gmail.com 57 -78.45
+Elaine Benus elaine@gmail.com 56 876.34
+David Puddy david@gmail.com 60 1563.43
+Mr. Newman newman@gmail.com 62 23.45
+Kenny Bania kenny@gmail.com 61 673.33
