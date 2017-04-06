@@ -52,6 +52,10 @@ This project exist because it was assign to me.  However, I find it useful in a 
 
 In order to run this code, you need an integrated development environment like Visual Studio. This program is created using Visual Studio 2015 and started with an empty Win32 Console Application.
 
+In order to execute, cmd line arguments need to be inputted in VS like this:
+
+![alt tag](https://cloud.githubusercontent.com/assets/6993716/24732483/04209b94-1a26-11e7-8118-28e80098f625.PNG)
+
 ## API Reference
 
 None. Just included a standard C programing header files.
