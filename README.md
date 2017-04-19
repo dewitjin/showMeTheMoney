@@ -59,24 +59,23 @@ In order to execute, cmd line arguments need to be inputted in VS like this:
 <br/>
 
 Images:<br/>
-
-On start up: <br/>
+On start up: <br/><br/>
 
 ![alt tag](https://cloud.githubusercontent.com/assets/6993716/25205252/6c0bfa00-2516-11e7-8b41-0994031d2d1c.PNG)
 
-<br/> Convert option: <br/>
+<br/> Convert option: <br/><br/>
 ![alt tag](https://cloud.githubusercontent.com/assets/6993716/25205259/7497049e-2516-11e7-88f6-74d99b25c402.PNG)
 
-<br/> Index option: <br/>
+<br/> Index option: <br/><br/>
 ![alt tag](https://cloud.githubusercontent.com/assets/6993716/25205261/78cbc388-2516-11e7-89b0-bf0c3545d10e.PNG)
 
-<br/> Natural sorting option: <br/>
+<br/> Natural sorting option: <br/><br/>
 ![alt tag](https://cloud.githubusercontent.com/assets/6993716/25205263/7d305fec-2516-11e7-8450-2cc86974b89c.PNG)
 
-<br/> Sorted option: <br/>
+<br/> Sorted option: <br/><br/>
 ![alt tag](https://cloud.githubusercontent.com/assets/6993716/25205265/809fa0c0-2516-11e7-9b64-e56bcc76e0d6.PNG)
 
-<br/> Exit option: <br/>
+<br/> Exit option: <br/><br/>
 ![alt tag](https://cloud.githubusercontent.com/assets/6993716/25205267/8491896e-2516-11e7-9f27-9ae5fd5b020d.PNG)
 
 ## API Reference
