@@ -28,6 +28,8 @@ display.c file should be able to read the index file, grab the file position sto
 
 The biggestest challenge in refractoring my code to different header files is getting a redefinition error.  In order to debug it, I would define the struct in different headers to see what worked and what didn't. My error was fixed by including datadefs.h once in main.c, and in all other header files (covert.h, index.h and display.h).  I didn't have to include the other source files in main.c.  In the other source files (covert.c, index.c and display.c) I included the appropriate header files (covert.h, index.h and display.h). I think my redefinition error occured because I tried to include the other source files in main.c, and somewhere the program tried to redefine the code inside.  It was hard to debug because the debugger wouldn't jump to a file twice, it just threw the error.
 
+![alt tag](https://cloud.githubusercontent.com/assets/6993716/25870623/a05080ee-34b9-11e7-9e01-01397c37f6f1.PNG) <br/>
+
 The above method worked, but I also added a guard in datadef.h; thereby, preventing redefinition errors when I include this in multiple places.
 
 #ifndef DATADEFS_H //explantions on guard https://en.wikipedia.org/wiki/Include_guard<br />
@@ -77,6 +79,16 @@ On start up: <br/><br/>
 
 <br/> Exit option: <br/><br/>
 ![alt tag](https://cloud.githubusercontent.com/assets/6993716/25205267/8491896e-2516-11e7-9f27-9ae5fd5b020d.PNG)
+
+<br/> Error messages
+
+<br/>
+![alt tag](https://cloud.githubusercontent.com/assets/6993716/25870645/ae9b6c86-34b9-11e7-8c63-60a72eb62009.PNG)
+
+<br/>
+
+![alt tag](https://cloud.githubusercontent.com/assets/6993716/25870653/b17c34c6-34b9-11e7-8fc1-ef4ed86d4359.PNG)
+
 
 ## API Reference
 
