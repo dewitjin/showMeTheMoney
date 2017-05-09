@@ -82,8 +82,8 @@ On start up: <br/><br/>
 
 <br/> Error messages
 
-<br/>
 ![alt tag](https://cloud.githubusercontent.com/assets/6993716/25870645/ae9b6c86-34b9-11e7-8c63-60a72eb62009.PNG)
+
 
 <br/>
 
