@@ -19,14 +19,14 @@ display.c should be able to read from the data binary file and display the data 
 
 2) Build index.c and modify convert.c and display.c
 
-convert.c file should be able to read from the data binary file and create a index file (index.c) with useful information (i.e. data key, file position) //TODO have multiple indices in one index file, right now it’s just one index (lastname, file position)<br />
+convert.c file should be able to read from the data binary file and create a index file (index.c) with useful information (i.e. data key, file position) <br/>
+
+//TODO have multiple indices in one index file, right now it’s just one index (lastname, file position)<br />
 display.c file should be able to read the index file, grab the file position stored inside the index, and then use the file position to locate the account data inside the data binary file<br />
 
-3) Build a startProgram.c file, datadefs.h, convert.h, index.h, display.h and modify the old files to include the appropriate header files to reduce code repetition 
+3) Build a main.c file, datadefs.h, convert.h, index.h, display.h and modify the old files to include the appropriate header files to reduce code repetition <br/>
 
-//TODO change assign06.c to startProgram.c<br />
-
-The biggestest challenge in refractoring my code to different header files is getting a redefinition error.  In order to debug it, I would define the struct in different headers to see what worked and what didn't. My error was fixed by including datadefs.h once in startProgram.c, and in all other header files (covert.h, index.h and display.h).  I didn't have to include the other source files in startProgram.c.  In the other source files (covert.c, index.c and display.c) I included the appropriate header files (covert.h, index.h and display.h). I think my redefinition error occured because I tried to include the other source files in startProgram.c, and somewhere the program tried to redefine the code inside.  It was hard to debug because the debugger wouldn't jump to a file twice, it just threw the error.
+The biggestest challenge in refractoring my code to different header files is getting a redefinition error.  In order to debug it, I would define the struct in different headers to see what worked and what didn't. My error was fixed by including datadefs.h once in main.c, and in all other header files (covert.h, index.h and display.h).  I didn't have to include the other source files in main.c.  In the other source files (covert.c, index.c and display.c) I included the appropriate header files (covert.h, index.h and display.h). I think my redefinition error occured because I tried to include the other source files in main.c, and somewhere the program tried to redefine the code inside.  It was hard to debug because the debugger wouldn't jump to a file twice, it just threw the error.
 
 The above method worked, but I also added a guard in datadef.h; thereby, preventing redefinition errors when I include this in multiple places.
 
@@ -35,7 +35,7 @@ The above method worked, but I also added a guard in datadef.h; thereby, prevent
 //code<br />
 #endif // !DATADEFS.H<br />
 
-startProgram.c should include the datadefs.h, display a menu to convert, index, display natural order, display by last name ascending order, and exit <br />
+main.c should include the datadefs.h, display a menu to convert, index, display natural order, display by last name ascending order, and exit <br />
 
 //TODO after adding more sorting feature, remember to add more options in the menu<br />
 
